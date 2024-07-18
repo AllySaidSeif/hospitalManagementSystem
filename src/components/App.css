@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background:#edf1f4;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  a{
+    text-decoration: none;
+  }

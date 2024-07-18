@@ -1,0 +1,313 @@
+.header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 70px;
+  margin-top: 15px;
+  background: #edf1f4;
+  color: #0787e9;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div .background {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+img {
+  width: 100%;
+  opacity: 0.9;
+}
+
+div .Text {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+.background:hover img {
+  opacity: 1;
+}
+
+.background:focus Text {
+  box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    inset 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*---------------------------------DoctorLogin---------------------------*/
+.doctor {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  background: #edf1f4;
+}
+
+.container {
+  position: relative;
+  width: 380px;
+  padding: 80px 50px 50px;
+  box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container h2 {
+  font-weight: bold;
+  font-size: 6000;
+  left: 0;
+  margin-right: 150px;
+}
+
+.LoginWelcome {
+  margin-top: -20px;
+  margin-right: 80px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.container form {
+  position: relative;
+  width: 100%;
+}
+
+.container form .inputBox {
+  position: relative;
+  display: flex;
+}
+
+.container form .inputBox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1em;
+}
+
+.container form .inputBox input[type="text"],
+.container form .inputBox input[type="password"] {
+  padding: 15px 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+  text-align: left;
+}
+
+.container form .inputBox input[type="submit"] {
+  margin: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+  width: 270%;
+  font-weight: 6000;
+  margin: 10px;
+}
+
+/*--------------DoctorHomePage-------------------------------------*/
+
+.DrBar {
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  transition: 0.5s;
+  background: #0787e9;
+  overflow: hidden;
+}
+
+.DrBar:hover {
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.DrBar ul {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 100%;
+}
+
+.DrBar ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.DrBar ul li:hover {
+  background: #edf1f4;
+  width: 300px;
+  transition: 0.5s;
+}
+
+.DrBar ul li a {
+  color: #fff;
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  transition: 0.5s;
+}
+
+.DrBar ul li a:hover {
+  color: #0787e9;
+  transition: 0.5s;
+}
+.DrBar ul li a .title {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.DrBar ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  line-height: 60px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.DrBar ul li a .icon .fa {
+  font-size: 24px;
+}
+
+.main {
+  position: absolute;
+  left: 400px;
+  transition: 0.5s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  top: -300px;
+  cursor: pointer;
+  margin: 10px;
+  width: 350px;
+}
+
+.cardBox .card {
+  position: relative;
+  background: #0787e9;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.cardBox .card:hover {
+  background: #a522fc;
+}
+
+.cardBox .card .cardNumber {
+  font-size: xx-large;
+  left: 4px;
+  top: 3px;
+  font-weight: bold;
+  color: #edf1f4;
+}
+
+.cardBox .card .cardIcon {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  padding: 10px;
+  background: #edf1f4;
+  border-radius: 50px;
+  color: #0787e9;
+}
+.cardBox .card .cardText {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #edf1f4;
+}
+
+/*-----------------------------workers-------------------------*/
+#WorkerMain {
+  position: absolute;
+  left: 100px;
+  transition: 0.5s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#WorkerHome {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+table tr{
+    padding: 20px;
+    
+}
+
+#content{
+  width: 85%;
+  margin-left: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+table{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.AllDrBody{
+  align-items: center;
+  justify-content: center;
+}
+.patient{
+  width:450px;
+  min-height: 50vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-left:35% ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#label{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+#cancel{
+  margin-left: 10px;
+}
+
+
